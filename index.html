@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>플래그 알리미</title>
+    <!--asking autoplay permission-->
+        
+</head>
+<body onload="startTime()">
+    <div class="backgroundimage"></div> 
+    <!--upper text-->
+    <div id="main">플래그 알람</div>
+    <div id="main2">매시 30분마다 알람이 울립니다!</div>
+    <div id="clock"></div>
+
+    <!--hide and show-->
+        <center><input type="button" value="설정 열기" 
+            id ="hidebutton" class="button" onclick="showAndHide();"/></center>
+        <div id="settings" style="display:none;">
+            <div class="mainscript">설정은 나중에 넣을래요</div>
+        </div>
+        <script>
+            document.write(nowminute + '<br>'); 
+            document.write(bringtime);
+        </script>
+    <!--play audio at 30min-->
+    <script id="timer30">
+    if(nowminute > 0){
+        audio1.play();
+        }
+    </script>
+
+</body>
+</html>
