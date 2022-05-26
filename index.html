@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icon.ico">
-    <script src="script.js"></script>
+    <link rel="preload" href="MaplestoryLight.woff2" as="font" type="font/woff2" crossorigin>
     <title>플래그 알리미</title>
 </head>
 <body onload="startTime()">
@@ -15,14 +15,15 @@
         매 시 30분에 알람이 울립니다</div>
     <div id="clock"></div>
 
-    <!--hide and show-->
-        <center><input type="button" value="이거 눌러야 소리 나옴" 
-            id ="hidebutton" class="button" onclick="showAndHide();"/></center>
-        <div id="settings" style="display:none;">
-            <div class="mainscript">30초 전에 알려드리겠습니다.</div>
-        </div>
-        <div id="links">
-            <a href="https://ascheri.github.io/expalarm/index.html">경뿌 알리미</a>
-        </div>
+    <!--버튼 밑-->
+    <input type="button" value="이거 눌러야 소리 나옴" 
+        id ="hidebutton" class="button" onclick="showAndHide();"/>
+    <div id="settings" style="display:none;">
+        <div class="mainscript">30초 전에 알려드리겠습니다.</div>
+    </div>
+    <div id="links">
+        <a href="https://ascheri.github.io/expalarm/index.html">경뿌 알리미</a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
